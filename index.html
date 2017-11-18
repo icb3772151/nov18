@@ -1,0 +1,192 @@
+<!DOCTYPE.HTML>
+
+<html>
+
+  <head>
+
+    <title>CarRental</title>
+
+  </head>
+
+  <body>
+    
+    <form>
+      <br>
+
+      <h1>Car Rental</h1>
+      <h2>Renter Name</h2>
+
+      <form>
+
+        Renter Name:<br> 
+        <input type="text" name="whorenter"> 
+
+
+        <select name="cars">
+          <option value="type">1</option>
+          <option value="type">2</option>
+        </select> 
+
+        <p>Choose 1 for Econ</p>
+        <p>Choose 2 for Midsize</p>
+      </form> 
+
+      <button onclick="carData.click()">Rent Car</button>
+
+
+    </form>
+
+
+   <!-- <h1>Business Name</h1>
+
+    <p id="businessName"></p> -->
+
+
+
+    <h2>Economy Cars</h2>
+
+    <p id="economyCars"></p>
+
+    <h2>Econ Price</h2>
+    <p id="econPrice"></p>
+
+
+    <h2>Economy Cars Available</h2>
+
+    <p id="economycarsAvailable"></p>
+
+
+
+    <h2>Midsize Cars</h2>
+
+    <p id="midsizeCars"></p>
+
+    <h2>Midsize Price</h2>
+    <p id="midPrice"></p>
+
+    <h2>Midsize Cars Available</h2>
+
+    <p id="midsizecarsAvailable"></p>
+
+
+
+   <!-- <button onclick="carData.click()">Update Availability</button>
+
+    <button onclick="carData.economyAvail()">Rent out 1 Economy Car</button>
+
+    <button onclick="carData.midsizeAvail()">Rent out 1 Midsize Car</button> -->
+
+
+
+    <script>
+      
+     
+
+      var carData = { 
+
+        businessName: "Enterprise Car Rentals",
+
+        economyCars: 'Economy',
+        econPrice: 35,
+
+        economycarsAvailable: 83, 
+
+        midsizeCars: "Midsize",
+        midPrice: 50,
+
+        midsizecarsAvailable: 175,
+        whorentera: " ",
+        ccea: " "
+      }
+
+
+        click: function(){
+          
+          carData.whorentera.push("whorenter");
+          carData.ccea.push("type");
+          
+          if (whorentera = " ") {console.log("Enter Name")};
+   
+          
+          if (ccea = "1") {
+            
+
+            economyAvail: function(){
+
+              this.economycarsAvailable--;
+
+              document.getElementById("economycarsAvailable").innerHTML = this.economycarsAvailable;
+
+            },
+            document.getElementById("economyCars").innerHTML = this.economyCars;
+
+            document.getElementById("economycarsAvailable").innerHTML = this.economycarsAvailable;
+            
+            document.getElementById("econPrice").innerHTML = this.econPrice;};
+          
+          if (ccea = "2") {
+            document.getElementById("midsizeCars").innerHTML = this.midsizeCars;
+
+            document.getElementById("midsizecarsAvailable").innerHTML = this.midsizecarsAvailable;
+            
+            document.getElementById("midPrice").innerHTML = this.midPrice;
+
+          };
+            
+
+          document.getElementById("whorentera").innerHTML = this.whorentera;
+          document.getElementById("type").innerHTML = this.ccea;
+          document.getElementById("businessName").innerHTML = this.businessName;
+
+          document.getElementById("economyCars").innerHTML = this.economyCars;
+
+          document.getElementById("economycarsAvailable").innerHTML = this.economycarsAvailable;
+
+          document.getElementById("midsizeCars").innerHTML = this.midsizeCars;
+          
+
+          document.getElementById("econPrice").innerHTML = this.econPrice;
+
+          document.getElementById("midPrice").innerHTML = this.midPrice;
+          
+
+          document.getElementById("midsizecarsAvailable").innerHTML = this.midsizecarsAvailable;
+          
+
+          midsizeAvail: function(){
+
+            this.midsizecarsAvailable--;
+
+            document.getElementById("midsizecarsAvailable").innerHTML = this.midsizecarsAvailable;
+
+
+          console.log("click");
+
+        },
+
+
+
+
+
+
+        },
+
+      }
+
+
+
+    </script>           
+
+ 
+
+
+
+  </body>
+
+
+
+
+
+
+
+</html>
